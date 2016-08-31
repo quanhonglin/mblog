@@ -1,0 +1,55 @@
+{
+  "website":{
+    "title": "Jack's blog"
+  },
+  "nav":{
+    "home": "Home",
+    "about_me": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "career": "Career",
+    "blog": "Blog",
+    "link": "Link"
+  },
+  "about_me":{
+    "about_me": "About Me",
+    "des": "Now,I am a Python engineer with platform development, project maintenance and deployment in QTZ. As well as operational experience, familiar with shell, the python script to write.My goal is to become a Devop ability of the enginner."
+  },
+  "skills":{
+    "my_skills": "My Skills"
+  },
+  "projects":{
+    "my_projects": "My Projects",
+    "saplatform": "Saplatform is a automated service for operations, it has asset management, project release, database access function, it can control mass servers.",
+    "jalpc": "Jalpc is a simple, beautiful and swift theme for Jekyll. It has comprehensive function, it can be easily used and edited. It's adapted for many kinds devices.",
+    "angularjs": "It is a web font application written by Angularjs and deployed by Jekyll on github (gh-pages), the backend platform is Leancloud, you can use Parse as well.",
+    "rsser": "Rsser is an Ionic application, with this application we can read news and articles freely, you can add rss address from the given list and add it manually."
+  },
+  "career":{
+    "my_career": "My Career",
+    "nextcode": "QTZ",
+    "nextcode_des": "Now I am in QTZ and using the Django framework development the data game's platform of the company .",
+    "nextcode_date": "2016.04-Now",
+    "nextcode_job": "Python Developer",
+    "netease": "Graduate",
+    "netease_des": "Network professional graduated from hunan university of technology, officially out of school, into the society.",
+    "netease_date": "2012.09-2016.07",
+    "netease_job": "Student",
+    "ucloud": "System Operations Engineer",
+    "ucloud_des": "In Beijing sohu changyou practice system operations engineer, learn the PXE server management and building, involved in the operational platform and the development of operational tools, started the python development path.",
+    "ucloud_date": "2015.08-2016.03",
+    "ucloud_job": "Dev Ops",
+    "college": "Training",
+    "college_des": "Training in Hunan Double Start to be a LInux operations engineer,introduction to Linux ops.",
+    "college_date": "2014.07-2015.07",
+    "college_job": "Linux operational training"
+  },
+  "blog":{
+    "my_blog": "My Blog"
+  },
+  "link":{
+    "link": "Link",
+    "view": "views"
+  }
+
+}

@@ -1,0 +1,13 @@
+#search_form .form-group {
+  padding: 10px 0px;
+  padding-right: 0%;
+  display: inline-block;
+}
+#search_form .form-group >label {
+  padding-right: 12px;
+}
+#search_form .form-group >input, .form-group >select {
+  margin-right: 12px;
+}
+
+

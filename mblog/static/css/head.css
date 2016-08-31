@@ -1,0 +1,91 @@
+.header{
+    width: 50%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-left: -15px;
+}
+.menus{
+    width: auto;
+    height: 80px;
+    float: right;
+}
+.menu{
+    width: auto;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+.list{
+    float: left;
+}
+a.font span{
+    float: right;
+    margin-left: 20px;
+    color: #222222;
+    font: 22px "宋体", Arial, Helvetica, sans-serif
+}
+img{
+    height: 80px;
+    width: 200px;
+}
+.contain{
+    min-height:100%;
+    height:auto;
+    position: relative;
+}
+.pages{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+html,body{padding:0; margin:0;height: auto}
+    h3 span{
+        float:left;
+        margin-right: 10px;
+        position: relative;
+    }
+
+    h3 span:nth-child(1){
+        -webkit-animation:jump 1s linear 0s infinite alternate;
+    }
+
+    h3 span:nth-child(2){
+        -webkit-animation:jump 1s linear 0.2s infinite alternate;
+    }
+
+    h3 span:nth-child(3){
+        -webkit-animation:jump 1s linear 0.4s infinite alternate;
+    }
+
+    h3 span:nth-child(4){
+        -webkit-animation:jump 1s linear 0.6s infinite alternate;
+    }
+
+    h3 span:nth-child(5){
+        -webkit-animation:jump 1s linear 0.8s infinite alternate;
+    }
+
+    @-webkit-keyframes jump
+    {
+        0%{
+            top:0px;
+            color:red;
+        }
+        50%{
+            top:-6px;
+            color:green;
+        }
+        100%{
+            top:6px;
+            color:blue;
+        }
+    }

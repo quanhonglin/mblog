@@ -1,0 +1,15 @@
+
+<div class="header">
+    <div class="logo"><a href="/"><img src="/static/img/logo.png"></a></div>
+    <div class="menus">
+        <div class="menu">
+        <div class="list"><a class="font" href="/"><span>首页</span></a></div>
+        {% for i in header%}
+        <div class="list"><a class="font" href="/{{i.nav_name}}/index"><span>{{i.nav_name|capfirst}}</span></a>
+        </div>
+            {% endfor %}
+        <div class="list"><a class="font" href="/"><span>关于我</span></a></div>
+        <div class="list"><a class="font" href="/"><span>留言板</span></a></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,126 @@
+/*body {*/
+    /*height: auto;*/
+    /*width: 100%;*/
+    /*background: url("/static/img/green.png") no-repeat ;*/
+    /*background-size: 100% auto ;*/
+/*}*/
+.pic{
+     height: 265px;
+     width: 100%;
+}
+#myCarousel{
+        margin:0 auto;
+        width:500px;
+    }
+#myCarousel{
+    width: 960px;
+    height: 400px;
+}
+.show{
+    width: 50%;
+    height: 265px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.text{
+    width: auto;
+    height: 20px;
+    margin-top: 55px;
+    /*margin-left: 80px;*/
+    float: left;
+}
+.text p{
+    font-family: FangSong;
+    font-size: large;
+    color: #f9f9f9;;
+}
+.blue{
+    height: auto;
+    width: 960px;
+}
+.s1{
+    width: 300px;
+    height: auto;
+    float: right;
+}
+.s2{
+    width: 270px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #EEEEEE;*/
+}
+.tittle{
+    width: 270px;
+    height: 15px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hr{
+    width: 500px;
+    height: auto;
+    float: right;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    display:block;
+    position: absolute;
+}
+.contents{
+    width: 960px;
+    height: auto;
+}
+.articles{
+    width: 640px;
+    height: auto;
+    float: left;
+}
+.article{
+    width: 640px;
+    height: 160px;
+    word-break:break-all;
+    position: relative;
+    font: 16px "宋体", Arial, Helvetica, sans-serif;
+}
+.article-head{
+    width: 640px;
+    height: auto;
+    background-color: #EEEEEE;
+}
+.button{
+    right: 0px;
+    position: absolute;
+    bottom: 0;
+}
+.item{
+    width: 120px;
+    margin-right: 12px;
+}
+.pic-heart{
+    width: 25px;
+    height: 25px;
+    background-color: red ;
+    background-size:25px 25px ;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    font-size: medium;
+}
+.pic-title{
+    float: left;
+    font-family: STXingkai  ;
+    font-size: 15px;
+    font-weight: bold;
+}
+.titles{
+    width: 270px;
+    height: 25px;
+    margin-bottom: -20px;
+    margin-top: -7px;
+}
+#hr{
+    height: 10px;
+    margin-bottom: 10px
+}

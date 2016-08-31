@@ -1,0 +1,41 @@
+#footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0px 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #66CCFF;
+    width: 960px;
+    text-align:center;
+    filter: alpha(opacity:0.4);
+}
+
+#footer a {
+    font: 20px/2 Arial;
+    margin:0;
+    padding:0 10px;
+}
+
+#footer img {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#footer ul {
+    display: inline;
+}
+#footer ul>li{
+    display: inline;
+    font-size: 14px;
+    list-style: none;
+    color: #766F6F;
+}
+
+#section {
+    margin-bottom: 15%;
+}
+.bottom{
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

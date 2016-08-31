@@ -1,0 +1,40 @@
+<div class="s1">
+    <div class="s2">
+        <div>
+            <ul class="nav nav-tabs" role="tablist" id="mytab">
+                <li role="presentation" class="active"><a href="#hot" id="hot-tab"  role="tab" data-toggle="tab">热门排行</a></li>
+                <li role="presentation"><a href="#new" id="new-tab"  role="tab" data-toggle="tab">最新文章</a></li>
+                <li role="presentation"><a href="#post" id="post-tab"  role="tab" data-toggle="tab">博主推荐</a></li>
+            </ul>
+        </div>
+        <br>
+        <div id="myTabContent" class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="hot" >
+        {% for article in articles %}
+            <div class="titles">
+                <div class="pic-heart"><b>{{forloop.counter}}</b></div>
+                <div class="pic-title">{{article.title}}</div>
+            </div>
+            <div ><hr></div>
+        {% endfor %}
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="new" >
+        {% for n in new %}
+            <div class="titles">
+                <div class="pic-heart"><b>{{forloop.counter}}</b></div>
+                <div class="pic-title">{{n.title}}</div>
+            </div>
+            <div ><hr></div>
+        {% endfor %}
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="post" >
+        {% for n in new %}
+            <div class="titles">
+                <div class="pic-heart"><b>{{forloop.counter}}</b></div>
+                <div class="pic-title">{{n.title}}</div>
+            </div>
+            <div ><hr></div>
+        {% endfor %}
+            </div>
+    </div>
+</div>
