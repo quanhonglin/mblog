@@ -13,10 +13,7 @@
   <meta name="author" content="Jack">
 
   <title>
-      {% for i in articles %}
-        不忘初心|{{i.title}}
-      {% endfor %}
-    
+        不忘初心|{{articles.0}}
   </title>
   <!-- favicon -->
    <link rel="shortcut icon" href="/static/img/favicon.ico">
@@ -243,6 +240,9 @@
                         <li>
                             <a href="#panel-874705" data-toggle="tab">Wechat</a>
                         </li>
+                        <li>
+                            <a href="#panel-874706" data-toggle="tab">TaoBao</a>
+                        </li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="panel-405278">
@@ -253,6 +253,11 @@
                         <div class="tab-pane" id="panel-874705">
                             <div class="text-center">
                                 <img src="/static/img/pay/WeChatpay.jpg" height="250" width="250">
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="panel-874706">
+                            <div class="text-center">
+                                <img src="/static/img/pay/tb.png" height="250" width="250">
                             </div>
                         </div>
                     </div>
@@ -282,10 +287,10 @@
                             
                             <br>
                             <!-- comment -->
-                            
+
 <div class="disqus-thread">
     <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="7" data-title="请替换成文章的标题" data-url="http://www.baidu.com"></div>
+	<div class="ds-thread" data-thread-key="{{eid}}" data-title="{{articles.0}}" data-url="http://blog.v562.com/page/{{eid}}"></div>
         <!-- 多说评论框 end -->
         <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
         <script type="text/javascript">

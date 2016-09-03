@@ -22,11 +22,8 @@ urlpatterns = [
     url(r'^admin/filebrowser/', include(site.urls)),
     url(r'^grappelli/',include('grappelli.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'hitcount/', include('hitcount.urls', namespace='hitcount')),
-    url(r'^comments/', include('django_comments.urls')),
     url(r'^oauth/', include('mblog.oauth.urls')),
     url(r'^page/', include('mblog.page.urls')),
-    url(r'^comment/', include('mblog.comment.urls')),
     url(r'^entry/(?P<category>\w+)$', 'mblog.page.views.entry', name='entry'),
     url(r'^$', 'mblog.page.views.index', name="index"),
 

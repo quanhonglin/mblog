@@ -1,14 +1,9 @@
 django==1.8.6
 django-taggit
-django-mptt==0.6.1
 django-grappelli==2.7.3
 MySQL-python==1.2.5
-requests==2.2.1
-django-contrib-comments
-django-bootstrap3
 Markdown
 utils
 Pillow
 PIL
-django-hitcount
 pyquery

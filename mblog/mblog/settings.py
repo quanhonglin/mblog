@@ -43,18 +43,13 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_comments',
     'django.contrib.sites',
-    'bootstrap3',
     'taggit',
     'mblog.page',
-    'mblog.message',
     'mblog.oauth',
-    'mblog.comment',
-    'hitcount',
 
 )
-COMMENTS_APP = 'mblog.comment'
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -140,7 +135,5 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli/'
 GRAPPELLI_ADMIN_TITLE = 'mblog后台管理系统'
 MARKUP_LANGUAGE = 'markdown'
 TAGGIT_CASE_INSENSITIVE = True
-HITCOUNT_KEEP_HIT_ACTIVE = {'minutes': 60}
-HITCOUNT_HITS_PER_IP_LIMIT = 0  # unlimited
-HITCOUNT_KEEP_HIT_IN_DATABASE = {'seconds': 10}
+
 from page.filebrowser import *
