@@ -19,7 +19,7 @@ def blog(request):
     context['categorys'] = categorys
     context['header'] = header
     context['latest'] = latest
-    return render_to_response('blog_index.html', context_instance=context)
+    return render_to_response('blog.html', context_instance=context)
 
 def entry(request, category):
     context = RequestContext(request)

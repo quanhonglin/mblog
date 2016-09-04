@@ -4,6 +4,4 @@ django-grappelli==2.7.3
 MySQL-python==1.2.5
 Markdown
 utils
-Pillow
-PIL
 pyquery
