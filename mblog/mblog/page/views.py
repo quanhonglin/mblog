@@ -27,6 +27,7 @@ def entry(request, category):
     category = obj[0]
     enties = Entry.objects.filter(category=category)
     context["enties"] = enties
+    context["category"] = category
     return render_to_response('categorys.html', context_instance=context)
 
 def article(request, eid):
@@ -36,14 +37,15 @@ def article(request, eid):
         articles = Entry.objects.filter(id=eid)
         context["object"] = object
         context["articles"] = articles
+        context["eid"] = eid
     return render_to_response('article.html', context_instance=context)
 
 
 def get(request, pid):
     if request.user.is_superuser:
-        page = get_object_or_404(Page, pk=pid)
+        page = get_object_or_404(Entry, pk=pid)
     else:
-        page = get_object_or_404(Page, pk=pid, public=True)
+        page = get_object_or_404(Entry, pk=pid, public=True)
 
     context = {
         'page': page,
