@@ -7,26 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <meta content="RHEL的EPEL源地址及安装" name="description">
-  
-  
-    <meta name="keywords" content="rhel,epel,rpm,linux">
   
   <meta name="author" content="Jack">
 
   <title>
     
-        Jalpc|RHEL的EPEL源地址及安装
+        Jalpc|Blog
     
   </title>
   <!-- favicon -->
-   <link rel="shortcut icon" href="/static/img/favicon.ico">
+  <link rel="shortcut icon" href="/static/img/favicon.ico">
 
   <!-- Third-party CSS -->
   <link href="/static/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="/static/bower_components/animate.css/animate.min.css" rel="stylesheet">
   <link href="/static/bower_components/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="/static/font-mfizz/font-mfizz.css" rel="stylesheet">
+  <link href="/static/static/font-mfizz/font-mfizz.css" rel="stylesheet">
   <link href="/static/bower_components/toastr/toastr.min.css" rel="stylesheet">
   <link href="/static/bower_components/jquery.gritter/css/jquery.gritter.css" rel="stylesheet">
   <link rel="stylesheet" href="/static/css/cb-search.css">
@@ -114,41 +110,24 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Jalpc</a>
+                    <a class="navbar-brand" href="/">不忘初心</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="/blog/">Home</a></li>
-
-                        
+                        <li><a class="page-scroll" href="/">Home</a></li>
                             <li>
-                        
-                            <a class="page-scroll" href="/python/">Python</a></li>
-
-                        
+                            <a class="page-scroll" href="/entry/django">Django</a></li>
                             <li>
-                        
-                            <a class="page-scroll" href="/linux/">Linux</a></li>
-
-                        
+                            <a class="page-scroll" href="/entry/linux">Linux</a></li>
                             <li>
-                        
-                            <a class="page-scroll" href="/html/">HTML</a></li>
-
-                        
+                            <a class="page-scroll" href="/entry/mysql">MySQL</a></li>
                             <li>
-                        
-                            <a class="page-scroll" href="/database/">Database</a></li>
-
-                        
+                            <a class="page-scroll" href="/entry/mongodb">Mongodb</a></li>
                             <li>
-                        
-                            <a class="page-scroll" href="/mac/">Mac</a></li>
-
-                        
+                            <a class="page-scroll" href="/entry/docker">Docker</a></li>
                             <li>
-                        
-                            <a class="page-scroll" href="/life/">Life</a></li>
+                            <a class="page-scroll" href="/entry/life">Life</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -193,152 +172,53 @@
 
 	
 
-    <div class="wrapper wrapper-content  animated fadeInRight article">
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="ibox">
-                <div class="ibox-content">
-                    <div class="pull-right">
-                    	
-                        	<button class="btn btn-white btn-xs" type="button">Linux</button>
-                        
-                    </div>
-                    <div class="text-center article-title">
-                    <span class="text-muted"><i class="fa fa-clock-o"></i> 13 Jan 2015</span>
-                        <h1>
-                            RHEL的EPEL源地址及安装
-                        </h1>
-                    </div>
-                    	<p>RHEL6:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
-[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-</code></pre>
+        <div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h1>Latest Blog</h1>
+    </div>
 </div>
 
-<p>RHEL5:</p>
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="wrapper wrapper-content animated fadeInRight">
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[root@test ~]# rpm -ivh http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
-[root@test ~]# rpm -ivh  http://download.fedoraproject.org/pub/epel/5/i386/epel-release-5-4.noarch.rpm
-</code></pre>
-</div>
-
-<p>EPEL版本不同，根据不同系统请自行安装。</p>
-
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-6">
-                                <h5>Tags:</h5>
-                                
-                                    <button class="btn btn-white btn-xs" type="button">epel</button>
-                                
+            <!-- latest 10 blog -->
+			
+            {% for i in latest %}
+            <div class="vote-item">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="vote-actions">
                         </div>
-                        <div class="col-md-6">
-                            <div class="small text-right">
-                                <h5>Stats:</h5>
-                                <div> 
-                                
-                                
-                                <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://www.jack003.com/linux/2015/01/13/linux-epel.html">0</span> comments
-                                
-                                </div>
-                            </div>
+                        <a href="{{i.get_absolute_url}}" class="vote-title">
+                            {{i.title}}
+                        </a>
+                        <div class="vote-info">
+
+
+                            <i class="fa fa-comments-o"> </i> <a>Comments (<span class='disqus-comment-count' data-disqus-url="http://www.jack003.com/html/2016/08/08/ionic-icon-splash.html">0</span>)</a>
+
+                            <i class="fa fa-clock-o"></i> <a>{{i.created|date:"Y-m-d"}}</a>
+                            <i class="fa fa-user"></i> <a>{{i.author}}</a>
                         </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <!-- donate -->
-                            
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-    Donate
-</button>
-<div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content animated flipInY">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title">Donate Me</h4>
-                <small class="font-bold">Thanks for your support!</small>
-            </div>
-            <div class="modal-body">
-                <div class="tabbable" id="tabs-960227">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a href="#panel-405278" data-toggle="tab">Alipay</a>
-                        </li>
-                        <li>
-                            <a href="#panel-874705" data-toggle="tab">Wechat</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="panel-405278">
-                            <div class="text-center">
-                                <img src="/static/img/pay/alipay.png"" height="250" width="250">
-                            </div>    
-                        </div>
-                        <div class="tab-pane" id="panel-874705">
-                            <div class="text-center">
-                                <img src="/static/img/pay/wechat.png"" height="250" width="250">
-                            </div>
+                    <div class="col-md-2 ">
+                        <div class="vote-icon">
+                            <i class="fa icon-phone-gap"> </i>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+            {% endfor %}
 
-                            
-                            <br>
-                            <!-- share -->
-                            
-                                <h2>Share:</h2>
-
-<div class="bshare-custom">
-	<a title="分享到微信" class="bshare-weixin"></a>
-	<a title="分享到QQ空间" class="bshare-qzone"></a>
-	<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
-	<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
-</div>
-<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=513f778e-a8f7-4c20-9ec2-d29cc2328d75&amp;pophcol=1&amp;lang=zh"></script>
-<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
-                            
-                            <br>
-                            <!-- comment -->
-                            
-
-
-<div id="disqus_thread"></div>
-<script>
-/** * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS. * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
-	/*
-	var disqus_config = function () { this.page.url = PAGE_URL;
-	// Replace PAGE_URL with your page's canonical URL variable this.page.identifier = PAGE_IDENTIFIER;
-	// Replace PAGE_IDENTIFIER with your page's unique identifier variable };
-	*/
-	(function() { // DON'T EDIT BELOW THIS LINE
-			var d = document, s = d.createElement('script');
-			s.src = '//jalpc.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
         </div>
     </div>
 
 </div>
+
+
+
 
 
 	

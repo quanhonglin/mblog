@@ -8,7 +8,6 @@ from django.utils.encoding import force_unicode
 
 import os, re, time, cgi
 from pyquery import PyQuery as pq
-# from filebrowser.base import FileObject
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 

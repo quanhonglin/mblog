@@ -36,7 +36,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'grappelli',
-    'filebrowser',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,5 +134,3 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli/'
 GRAPPELLI_ADMIN_TITLE = 'mblog后台管理系统'
 MARKUP_LANGUAGE = 'markdown'
 TAGGIT_CASE_INSENSITIVE = True
-
-from page.filebrowser import *
