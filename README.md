@@ -33,12 +33,15 @@
 
 ### uwsgi
 * uwsgi.py`(在manage.py同级目录下添加wsgi文件)`
->import os
->os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mblog.settings")
->application = get_wsgi_application()
+```
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mblog.settings")
+application = get_wsgi_application()
+```
 
 * mblog.ini`(在manage.py同级目录下添加ini文件)`
->[uwsgi]
+```
+[uwsgi]
 uid = root
 gid = root
 socket = 127.0.0.1:8001
@@ -50,9 +53,11 @@ threads = 8
 vacum = True
 pidfile = /tmp/uwsgi.pid
 daemonize = /tmp/uwsgi.log
+```
 
 ### nginx 配置文件
->server {
+```
+server {
 listen       端口;
 server_name 域名;
 charset utf-8;
@@ -73,11 +78,12 @@ include uwsgi_params;
 proxy_read_timeout 120;
 }
 }
-
+```
 * 编写启动脚本
-># vim /usr/local/bin/mblog
->#!/usr/bin/env bash
->function start(){
+```
+# vim /usr/local/bin/mblog
+#!/usr/bin/env bash
+function start(){
      --ini ini文件所在目录/django.ini
 }
 function stop(){
@@ -103,9 +109,12 @@ case "$1" in
             exit 2
 esac
 exit
-># ln -s /usr/local/bin/mblog /usr/bin/mblog
+# ln -s /usr/local/bin/mblog /usr/bin/mblog
+```
 * 命令说明
-> mblog start
-> mblog restart
-> mblog stop
+```
+ mblog start
+ mblog restart
+ mblog stop
+ ```
 * 最后重启nginx，重启mblog
