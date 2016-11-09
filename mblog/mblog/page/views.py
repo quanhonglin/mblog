@@ -30,7 +30,9 @@ def entry(request, category):
     context["category"] = category
     return render_to_response('categorys.html', context_instance=context)
 
+
 def article(request, eid):
+
     context = RequestContext(request)
     object = get_object_or_404(Entry, pk=eid)
     if object:

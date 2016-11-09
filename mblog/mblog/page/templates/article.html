@@ -4,13 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <meta content="RHEL的EPEL源地址及安装" name="description">
-  
-  
-    <meta name="keywords" content="rhel,epel,rpm,linux">
-  
-  <meta name="author" content="Jack">
 
   <title>
         不忘初心|{{articles.0}}
@@ -63,7 +56,7 @@
   <!-- jPages -->
   <script src="/static/js/jPages.js"></script>
   <script src="/static/js/js.js"></script>
-  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script id="dsq-count-scr" src="/static/js/count.js" async></script>
   <script type="text/javascript">
         $(function(){
           /* initiate the plugin */
@@ -112,24 +105,7 @@
                     </button>
                     <a class="navbar-brand" href="/">不忘初心</a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="page-scroll" href="/">Home</a></li>
-                            <li>
-                            <a class="page-scroll" href="/entry/django">Django</a></li>
-                            <li>
-                            <a class="page-scroll" href="/entry/linux">Linux</a></li>
-                            <li>
-                            <a class="page-scroll" href="/entry/mysql">MySQL</a></li>
-                            <li>
-                            <a class="page-scroll" href="/entry/mongodb">Mongodb</a></li>
-                            <li>
-                            <a class="page-scroll" href="/entry/docker">Docker</a></li>
-                            <li>
-                            <a class="page-scroll" href="/entry/life">Life</a>
-                        </li>
-                    </ul>
-                </div>
+                {% include "catalog.html" %}
             </div>
         </nav>
 </div>
@@ -180,7 +156,7 @@
                 <div class="ibox-content">
                     <div class="pull-right">
                     	
-                        	<button class="btn btn-white btn-xs" type="button">Linux</button>
+                        	<!--<button class="btn btn-white btn-xs" type="button">Linux</button>-->
                         
                     </div>
                     <div class="text-center article-title">
@@ -309,7 +285,7 @@
 </div>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                 <img src="http://www.reliablecounter.com/count.php?page=blog.v562.com/page/{{eid}}/&digit=style/black-and-white/3/&reloads=0" alt="" title="" border="0">&nbsp;<span data-i18n="link.view">views</span> || <strong>&copy; 2016 QHL</strong>
+                 <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=blog.v562.com/page/{{eid}}/&digit=style/plain/3/&reloads=0" alt="" title="" border="0"></a>&nbsp;<span data-i18n="link.view">views</span> || <strong>&copy; 2016 QHL</strong>
                 <!-- <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
                 <!-- <span id="busuanzi_container_site_pv"><strong id="busuanzi_value_site_pv"></strong>&nbsp;views.&nbsp;</span>|| -->
             </div>
