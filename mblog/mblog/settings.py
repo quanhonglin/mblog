@@ -87,24 +87,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mblog.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
-
-DB_MYSQL = {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'mblog',
-    'USER': 'root',
-    'PASSWORD': 'root',
-    'HOST': 'localhost',
-    'PORT': '3306',
-}
-
-DATABASES = {
-    'default': DB_MYSQL,
-}
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
@@ -134,3 +116,5 @@ ADMIN_MEDIA_PREFIX = STATIC_URL + 'grappelli/'
 GRAPPELLI_ADMIN_TITLE = 'mblog后台管理系统'
 MARKUP_LANGUAGE = 'markdown'
 TAGGIT_CASE_INSENSITIVE = True
+
+from conf.mblog_conf import *
