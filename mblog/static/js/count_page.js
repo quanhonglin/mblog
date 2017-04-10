@@ -2,7 +2,7 @@ $(document).ready(function() {
     $.ajax({
         type: "get",
         async: false,
-        url: "http://blog.v562.com/",
+        url: "http://192.168.12.31:8888/",
         dataType: "jsonp",
         jsonp: "callback",
         jsonpCallback: "flightHandler",
